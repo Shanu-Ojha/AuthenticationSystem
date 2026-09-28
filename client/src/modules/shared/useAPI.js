@@ -5,7 +5,7 @@ const useAPI = ()=>{
     const {accessToken, setAccessToken} = useAuthContext()
 
     const api = axios.create({
-        baseURL: `${import.meta.env.VITE_API_URL}/api`,
+        baseURL: `/api`,
         withCredentials: true,
     })
 
